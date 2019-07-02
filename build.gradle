@@ -99,6 +99,12 @@ dependencies {
     compile group: 'io.sentry', name: 'sentry-logback', version: '1.7.10'
     compile group: 'org.reflections', name: 'reflections', version: '0.9.11'
 
+    compile group: 'org.graalvm.sdk', name: 'graal-sdk', version: '19.0.2'
+    compile group: 'org.graalvm.truffle', name: 'truffle-api', version: '19.0.2'
+    compile group: 'org.graalvm.js', name: 'js', version: '19.0.2'
+    compile group: 'org.graalvm.js', name: 'js-scriptengine', version: '19.0.2'
+    compile group: 'org.graalvm.regex', name: 'regex', version: '19.0.2'
+     
     // Tests
     // Only needed to run tests in a version of IntelliJ IDEA that bundles older versions
     compile("org.junit.platform:junit-platform-launcher:1.1.0")
