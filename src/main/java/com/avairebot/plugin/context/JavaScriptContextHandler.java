@@ -3,6 +3,8 @@ package com.avairebot.plugin.context;
 import com.avairebot.AvaIre;
 import org.graalvm.polyglot.Context;
 import org.graalvm.polyglot.Value;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -15,7 +17,7 @@ import java.io.IOException;
  */
 public class JavaScriptContextHandler
 {
-
+    private Logger log = LoggerFactory.getLogger(JavaScriptContextHandler.class);
     /**
      * Instantiates a new JavaScript context handler.
      */
@@ -71,12 +73,12 @@ public class JavaScriptContextHandler
         }
         catch (FileNotFoundException e)
         {
-            e.printStackTrace();
+            log.error("Command File not found.",e);
             return "";
         }
         catch (IOException e)
         {
-            e.printStackTrace();
+            log.error("General IO Error.",e);
             return "";
         }
     }
