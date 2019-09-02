@@ -32,7 +32,7 @@ public enum Permissions {
     KICK_MEMBERS("general.kick_members", Permission.KICK_MEMBERS),
     BAN_MEMBERS("general.ban_members", Permission.BAN_MEMBERS),
     CREATE_INSTANT_INVITE("general.create_instant_invite", Permission.CREATE_INSTANT_INVITE),
-    NICKNAME_MANAGE("general.manage_nickname", Permission.NICKNAME_MANAGE),
+    NICKNAME_MANAGE("general.manage_nicknames", Permission.NICKNAME_MANAGE),
     NICKNAME_CHANGE("general.change_nickname", Permission.NICKNAME_CHANGE),
     MANAGE_EMOTES("general.manage_emojis", Permission.MANAGE_EMOTES),
     MANAGE_WEBHOOKS("general.manage_webhooks", Permission.MANAGE_WEBHOOKS),
